@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&family=Inter&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <title>Investology-Landing page</title>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="toggle-btn">
+            <i class="fa fa-gear" onclick="out()"></i>
+        </div>
+        <div class="top">
+            <h3>Theme switcher for button</h3>
+        </div>
+        <div class="right">
+            <!-- <h3>Theme switcher</h3> -->
+            <h4><i>Try a pre built switch</i></h4>
+            <span class="color red">Sunset <i class="fa fa-check red" style="visibility: hidden;"></i></span>
+            <span class="color blue">Default <i class="fa fa-check blue" style=" visibility: hidden ;"></i></span>
+            <span class="color orange">Flat <i class="fa fa-check orange" style="visibility: hidden;"></i></span>
+            <span class="color violet">Seafoam <i class="fa fa-check" style="visibility: hidden;"></i></span>
+            <span class="color original">Original <i class="fa fa-check" style="visibility: hidden;"></i></span>
+
+            <h4><i>Or choose your own colors...</i></h4>
+            <div class="color-picker">
+                <div class="picker">
+                    <label for="">Primary Color</label>
+                    <input type="color" value="#0050e4" id="input1" placeholder="hiii">
+                   
+                </div>
+                <div class="picker">
+                    <label for="">Secondary Color</label>
+                    <input type="color" value="#43da86" id="input2">
+                    
+                </div>
+            </div>
+            <h4><i>Pick a random color</i></h4>
+            <button id="random" onclick="randomColor()">Random color</button><br><br>
+            <hr><br>
+            <p style="padding: 5px 10px;"><i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem similique doloremque eius reprehenderit nisi quas tempora perspiciatis ullam voluptatem! Beatae deserunt neque ipsum necessitatibus.</i></p>
+        </div>
+    </div>
+
+    <!-- type two menu -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-centre">
+                <div class="logo">
+                    <a href="#"><i class="fa-solid fa-gears"></i>Investology</a>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-bars nav-toggler"></i>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="#" onclick="down()" id="drop-btn">About </a>
+                            
+                        </li>
+                        <li>
+                            <a href="#" onclick="down2()" id="drop-btn2">Team  </i></a>
+                            
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#" id="buy">Buy Now <i class="fa fa-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="hero-section container-2">
+            <div class="right-text">
+                <h1 class="roboto">An investment in knowledge
+                    pays the best interest</h1>
+                <p class="baloo">If you are just beginning to learn about the world of investment , Accren is your one-stop anything and everything</p>
+                <div class="out-btn">
+                <button class="btn">Learn more</button>
+                </div>
+            </div>
+            <div>
+                <img class="img shadow" src="firstphoto.png" alt="hero section">
+            </div>
+        </div>
+    </section>
+
+    <section class="container-2">
+        <div class="about-section">
+            <div class="left-text">
+                <h1 class="roboto text-color-1">An investment in knowledge
+                    pays the best interest</h1>
+                <p class="baloo">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no. sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
+                <div class="out-btn">
+                <button class="btn">Learn more</button>
+                </div>
+            </div>
+            <span>
+                <img class="img" src="secondphoto.png" alt="hero section">
+            </span>
+        </div>
+    </section>
+
+    <section class="container-2">
+        <div class="about">
+            <div class="group">
+                <h1 class="roboto text-color-1">Our Team is an 
+                    extension of yours</h1>
+                <p class="baloo">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no. sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
+                <div class="out-btn">
+                <button class="btn">Learn more</button>
+                </div>
+            </div>
+            <span>
+                <img class="img" src="thirdphoto.png" alt="hero section">
+            </span>
+        </div>
+    </section>
+
+    <section class="container-2">
+        <div>
+            <h1 class="roboto text-centre color-2">Get in touch or clame your 
+                non-profit profile on Investology</h1>
+                <div class="text-centre">
+                    <button class="btn">Claim now</button>
+                    <button class="btn"> What is it?</button>
+                </div>
+            <p class="baloo text-centre width">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no. sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+
+    <section class="container-2">
+        <div class="contact">
+            <div>
+                 <span>
+                     <img class="img" style="height: 300px; width: 300px;" src="fourthphoto.png" alt="">
+                 </span>
+            </div>
+            <div class="form">
+                <h1 class="color-2">Login if you already have an 
+                    account or else sing up for
+                    free to get started</h1>
+                <div class="input">
+                    <input type="text" placeholder="Write Your Name">
+                    <input type="text" placeholder="Write Your Mail">
+                    <input type="text" placeholder="Write Your Thought">
+                    <button type="submit" class="btn sub">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-2">
+        <div class="text-centre">
+            <h1 class="roboto text-centre color-2">Subscribe to our<br>
+                Newsletter<i class="fa fa-bell"></i></h1>
+                <div class="mail text-centre">
+                    <input type="email" placeholder="Email">
+                    <button class="btn sub">Subscribe</button>
+                </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    // theme switcher color
+    let red = document.querySelector('.red');
+    let blue = document.querySelector('.blue');
+    let orange = document.querySelector('.orange');
+    let yellow = document.querySelector('.yellow');
+    let violet = document.querySelector('.violet');
+    let original = document.querySelector('.original');
+    let content = document.querySelector('h1');
+    let content1 = document.querySelector('p');
+    let content2 = document.querySelector('#buy');
+    let check1 = document.querySelector('.red');
+    let check2 = document.querySelector('.blue');
+    let check3 = document.querySelector('.orange');
+
+    red.addEventListener('click', Red);
+
+    function Red() {
+        content2.style.backgroundColor = "red";
+    }
+
+    blue.addEventListener('click', Blue);
+
+    function Blue() {
+        content2.style.backgroundColor = "blue";
+    }
+
+    orange.addEventListener('click', Orange);
+
+    function Orange() {
+        content2.style.backgroundColor = "purple";
+    }
+
+    violet.addEventListener('click', Violet);
+
+    function Violet() {
+        // content.style.color = 'violet';
+        // content1.style.color = 'violet';
+        content2.style.backgroundColor = "green";
+    }
+
+    original.addEventListener('click', Original);
+
+    function Original() {
+        content.style.color = '#363d47';
+        content1.style.color = '#69707a';
+        content2.style.backgroundColor = "#363d47";
+    }
+
+    function randomColor() {
+        content2.style.backgroundColor = 'rgb(' + Math.round(Math.random() * 255) +
+            ',' + Math.round(Math.random() * 255) +
+            ',' + Math.round(Math.random() * 255) + ')';
+    }
+
+
+
+    // theme switcher box
+    function out() {
+        document.getElementById("sidebar").classList.toggle('active');
+    }
+
+    const drop_btn = document.querySelector("#drop-btn");
+    const drop_btn2 = document.querySelector("#drop-btn2");
+    const wrapper = document.querySelector(".drop1");
+    const wrapper2 = document.querySelector(".drop2");
+
+    drop_btn.onclick = (() => {
+        wrapper.classList.toggle('down');
+        wrapper2.classList.toggle('falldown');
+    });
+    drop_btn2.onclick = (() => {
+
+        wrapper2.classList.toggle('fall');
+
+    });
+
+    // menu javascript
+    const navToggler = document.querySelector(".nav-toggler");
+
+    navToggler.addEventListener('click', navToggle);
+
+    function navToggle() {
+        navToggler.classList.toggle("active");
+        const nav = document.querySelector(".nav");
+        nav.classList.toggle("open");
+        if (nav.classList.contains("open")) {
+            nav.style.maxHeight = nav.scrollHeight = "100%";
+        } else {
+            nav.removeAttribute("style");
+        }
+    }
+</script>
+
+</html>
